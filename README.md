@@ -10,6 +10,6 @@ When in VS code to open a folder you have to go to the file menu, select open fo
 
 *drumroll please...*
 
-![context menu img](./img/demo.png)
+![context menu img](https://github.com/ArcticWarmth/navigate-down/blob/60194c7af1718700aea815a14070d5060f0ce6db/img/demo.png)
 
 yep, thats it, just that simple button
