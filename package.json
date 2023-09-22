@@ -1,0 +1,53 @@
+{
+  "name": "navigate-down",
+  "displayName": "Navigate Down",
+  "description": "Add a reopen in folder to explorer content menu",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "navigate-down.open",
+          "when": "false"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "navigate-down.open",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "navigate-down.open",
+        "title": "Reopen Code in folder"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.82.0",
+    "@vscode/test-electron": "^2.3.4",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "sinon": "^16.0.0",
+    "typescript": "^5.1.6"
+  }
+}
