@@ -1,6 +1,7 @@
 {
   "name": "navigate-down",
   "displayName": "Navigate Down",
+  "publisher": "ArcticWarmth",
   "description": "Add a reopen in folder to explorer content menu",
   "version": "0.0.1",
   "engines": {
