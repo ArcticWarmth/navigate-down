@@ -3,7 +3,7 @@
   "displayName": "Navigate Down",
   "publisher": "ArcticWarmth",
   "description": "Add a reopen in folder to explorer content menu",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.82.0"
   },
@@ -25,7 +25,7 @@
         {
           "command": "navigate-down.open",
           "when": "explorerResourceIsFolder",
-          "group": "navigation"
+          "group": "navigation@999"
         }
       ]
     },
