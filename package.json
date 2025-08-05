@@ -5,7 +5,7 @@
   "description": "Add a reopen in folder to explorer content menu",
   "version": "0.2.0",
   "engines": {
-    "vscode": "^1.82.0"
+    "vscode": "^1.102.0"
   },
   "categories": [
     "Other"
@@ -39,12 +39,13 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
+    "test": "vscode-test"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.1",
     "@types/node": "16.x",
     "@types/vscode": "^1.82.0",
+    "@vscode/test-cli": "^0.0.11",
     "@vscode/test-electron": "^2.3.4",
     "eslint": "^8.47.0",
     "glob": "^10.3.3",
