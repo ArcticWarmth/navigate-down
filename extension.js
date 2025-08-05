@@ -1,3 +1,4 @@
+const { existsSync } = require('node:fs');
 const vscode = require('vscode');
 
 /**
@@ -10,13 +11,18 @@ function activate(context) {
 	context.subscriptions.push(vscode.commands.registerCommand("navigate-down.open", (url) => {
 		try {
 			// Prevent opening the current directory
-			if(vscode.workspace.workspaceFolders[0].uri.fsPath == url.fsPath) {
+			let folders = vscode.workspace.workspaceFolders[0];
+			let workspace = false;
+			// Check if user is in a workspace
+			if (folders != undefined && (folders.uri.fsPath == url.fsPath)) {
 				vscode.window.showErrorMessage("Cannot navigate to current directory");
 				return;
+			} else if (folders == undefined || !existsSync(url.fsPath) ) {
+				throw new ReferenceError("Attempted to check or navigate to non-existent directory")
 			} else {
-				// Open the folder
-				vscode.window.showInformationMessage("Opening " + url.fsPath);
+				vscode.showInformationMessage("Opening " + url.fsPath);
 				vscode.commands.executeCommand('vscode.openFolder', url,);
+
 			}
 		} catch (error) {
 			console.error(error)
