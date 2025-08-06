@@ -11,6 +11,7 @@
     "Other"
   ],
   "activationEvents": [],
+  "icon": "img/logo.png",
   "main": "./extension.js",
   "repository": "https://github.com/ArcticWarmth/navigate-down",
   "contributes": {
