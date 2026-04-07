@@ -3,9 +3,9 @@
   "displayName": "Navigate Down",
   "publisher": "ArcticWarmth",
   "description": "Add a reopen in folder to explorer content menu",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "engines": {
-    "vscode": "^1.110.0"
+    "vscode": "^1.114.0"
   },
   "categories": [
     "Other"
@@ -44,16 +44,16 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "^25.5.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.5.2",
     "@types/vscode": "^1.110.0",
     "@vscode/test-cli": "^0.0.12",
-    "@vscode/test-electron": "^2.3.4",
-    "eslint": "^10.1.0",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^10.2.0",
     "globals": "^17.4.0",
-    "mocha": "^11.7.1",
-    "typescript": "^5.1.6",
-    "typescript-eslint": "^8.57.1"
+    "mocha": "^11.7.5",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.58.0"
   },
   "packageManager": "pnpm@10.26.1"
 }
